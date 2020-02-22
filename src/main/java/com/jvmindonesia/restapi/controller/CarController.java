@@ -31,11 +31,11 @@ public class CarController {
         carRepository.deleteById(id);
     }
 
-    //masih error
-    @GetMapping
-    public List<Car> getCarByBrand(@Param("brand") String brand){
-        return carRepository.findByBrand(brand);
-    }
+//    //masih error
+//    @GetMapping
+//    public List<Car> getCarByBrand(@Param("brand") String brand){
+//        return carRepository.findByBrand(brand);
+//    }
 
     @PostMapping
     public Car addNewCar(@RequestBody Car car){
