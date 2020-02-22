@@ -14,7 +14,7 @@ public class RestApiApplication {
         SpringApplication.run(RestApiApplication.class, args);
     }
 
-    @Bean
+/*    @Bean
     public CommandLineRunner demo(CarRepository carRepository) {
         return args -> {
             carRepository.save(new Car("Ford", "Modeo", "Red", "Diesel", 2013));
@@ -27,5 +27,5 @@ public class RestApiApplication {
 			carRepository.save(new Car("Mitsubishi","Pick Up","Red","Diesel",2015));
 			carRepository.save(new Car("Ford","Van","Blue","Diesel",2018));
         };
-    }
+    }*/
 }

@@ -10,5 +10,5 @@ import java.util.List;
 public interface CarRepository extends CrudRepository<Car, Long> {
     //class yang bertugas koneksi ke DB
 
-//    List<Car> findByBrand(@Param("brand") String brand);
+    List<Car> findByBrand(String brand);
 }
