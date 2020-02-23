@@ -39,6 +39,9 @@ public class CarController {
         return carRepository.findByBrand(brand);
     }
 
+    @GetMapping("/cars/filter")
+    public List<Car> getCarByModel(@RequestParam("brand") String model){return carRepository.findByModel(model);}
+
 
     @PostMapping("/cars")
     public ResponseEntity<Car> addNewCar(@RequestBody Car car){

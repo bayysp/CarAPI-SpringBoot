@@ -11,4 +11,6 @@ public interface CarRepository extends CrudRepository<Car, Long> {
     //class yang bertugas koneksi ke DB
 
     List<Car> findByBrand(String brand);
+
+    List<Car> findByModel(String model);
 }
