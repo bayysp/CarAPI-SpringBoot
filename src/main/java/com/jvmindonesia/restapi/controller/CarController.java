@@ -40,7 +40,7 @@ public class CarController {
     }
 
     @GetMapping("/cars/filter")
-    public List<Car> getCarByModel(@RequestParam("brand") String model){return carRepository.findByModel(model);}
+    public List<Car> getCarByModel(@RequestParam("model") String model){return carRepository.findByModel(model);}
 
 
     @PostMapping("/cars")
